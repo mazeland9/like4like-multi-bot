@@ -7,7 +7,7 @@ entar lu suruh masukin cookies like4like
 gimana dah ngambilnya? gini anjir
 
 
-<<<<<<<<<AMBIL COOKIES LIKE4LIKE >>>>>>>>>>>>>>>>>>
+((( AMBIL COOKIES LIKE4LIKE )))
 login dulu like4like mu, terus pencet f12 bagian netwrok nah baru ke profile like4likemu cari cookie di get-user-info.php
 tinggal paste cookies like4likenya nah ini sekali doang kesononya kgk usah paling sesekali dah reset gitu
 
@@ -15,7 +15,7 @@ menu bot nongol pasti ada 7 klo kgk salah disini klo lu pilih bot bagian youtube
 kek mana bang cari cookiesnya? oke tak jelasin gini2
 
 
-<<<<<<<<<AMBIL COOKIES YOUTUBE >>>>>>>>>>>>>>>>>>
+((( AMBIL COOKIES YOUTUBE )))
 login ke youtube.com suruh full dulu baru f12 nah lu pencet menu pojok kanan atas ke profile kgk usah masuk kemana2 pencet doang aja
 dibagian account_menu?prettyPrint=false ada cookiesnya panjang beud anjir lu copy aja semua
 tinggal paste ke bot tadi udah mau menu 1 atau 2 cookies itu2 aja
@@ -23,11 +23,11 @@ tinggal paste ke bot tadi udah mau menu 1 atau 2 cookies itu2 aja
 trus klo cookies instagram? jirlah masa iya gua harus jelasin lagi! tapi gpp zaenal baik orangnya
 
 
-<<<<<<<<<AMBIL COOKIES INSTAGRAM >>>>>>>>>>>>>>>>>>
+((( AMBIL COOKIES INSTAGRAM )))
 masuk dulu ke IG lu suruh full dulu tampilannya baru F12 pencel profile poto lu, nah di network ada barisan sesuai username IG lu di sono anjir cookiesnya
 pas milih menu IG di bot pastekan lah cookiesmu 
 
-<<<<<<<<<AMBIL COOKIES TWITTER >>>>>>>>>>>>>>>>>>
+((( AMBIL COOKIES TWITTER )))
 klo twitter sama aja kek yg lain ada di profile juga di barisan user_flow.json ada cookiesnya
 set paste ke bot DONE
 

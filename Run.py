@@ -90,7 +90,7 @@ def banner():
  | |    | | |/ / _ \__   _| | |_ | '__/ _` | '_ ` _ \ 
  | |____| |   <  __/  | | | |__| | | | (_| | | | | | |
 [bold white] |______|_|_|\_\___|  |_|  \_____|_|  \__,_|_| |_| |_| 
-        [underline green]LIKE4LIKE BOT di buat pake kanjut BY ZAENAL""", width=74, style="bold bright_black"))
+        [underline green]Like4Like Multi - IG/Twitter/YouTube""", width=74, style="bold bright_black"))
 
 
 def show_status(username: str, credits: int):
@@ -334,7 +334,7 @@ class Bot:
         info = client.get_user_info()
         if not info:
             rprint(Panel("[bold red]Cookies Like4Like invalid atau expired. Silakan input ulang.", width=74, style="bold bright_black", title="[bold bright_black]>> [Cookies Invalid] <<"))
-            time.sleep(2)
+            time.sleep(10)
             self.request_l4l_cookies()
             client = L4L(self.cookies_l4l)
             info = client.get_user_info()
@@ -378,7 +378,7 @@ class Bot:
             tasks = client.get_tasks(feature)
             if not tasks:
                 rprint(Panel("[bold red]Tidak ada task saat ini atau terdeteksi bot. Coba lagi nanti.", width=74, style="bold bright_black", title="[bold bright_black]>> [Info] <<"))
-                time.sleep(3)
+                time.sleep(10)
                 continue  # Lanjutkan ke iterasi berikutnya dari loop while True
 
             # process first available task each loop
@@ -390,14 +390,14 @@ class Bot:
                     code3 = t['code3']
                 except KeyError:
                     rprint(f"[bold bright_black]   ╰─>[bold red] Data task tidak lengkap, melewati.     ", end='\r')
-                    time.sleep(1)
+                    time.sleep(10)
                     continue
 
                 # Start task
                 started = client.start_task(idlink, taskId, feature)
                 if not started:
                     rprint(f"[bold bright_black]   ╰─>[bold red] Gagal start task untuk {idlink}     ", end='\r')
-                    time.sleep(3)
+                    time.sleep(10)
                     continue
 
                 # Determine target URL by feature
@@ -418,7 +418,7 @@ class Bot:
                 ok_redirect = client.check_url(target_url)
                 if not ok_redirect:
                     rprint(f"[bold bright_black]   ╰─>[bold red] Tidak mendapatkan redirect URL!         ", end='\r')
-                    time.sleep(3)
+                    time.sleep(10)
                     continue
 
                 # Perform platform action
@@ -430,10 +430,10 @@ class Bot:
 
                 if not success_action:
                     rprint(f"[bold bright_black]   ╰─>[bold red] Gagal melakukan aksi di platform untuk {idlink}!     ", end='\r')
-                    time.sleep(3)
+                    time.sleep(10)
                     continue
 
-                time.sleep(5)  # Delay sebelum validasi
+                time.sleep(10)  # Delay sebelum validasi
 
                 # validate
                 credits_str = client.validate(feature, vrsta, idlink, taskId, code3, target_url)
@@ -449,7 +449,7 @@ class Bot:
                     break  # process one task per loop
                 else:
                     rprint(f"[bold bright_black]   ╰─>[bold red] Gagal validasi task untuk {idlink}!     ", end='\r')
-                    time.sleep(3)
+                    time.sleep(10)
                     continue
 
             # Delay counter
@@ -462,7 +462,7 @@ class Bot:
                     total -= 1
             else:
                 rprint(f"[bold bright_black]   ╰─>[bold yellow] Tidak ada task yang diproses, menunggu sebentar...     ", end='\r')
-                time.sleep(5)
+                time.sleep(10)
 
 
                 

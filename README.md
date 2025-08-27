@@ -34,3 +34,19 @@ set paste ke bot DONE
 SALAM HANGAT BY ZAENAL ABIDIN DOMBA
 BTW FOLLOW DAH ANJIR TWITTER GUA DI https://www.x.com/solidONsol12
 sebagai bentuk apresiasi
+
+
+
+NOTES KLO MISALNYA PAS pip install -r requirements.txt ada error brati versi ubuntu terlalu baru
+ngakalinnya pake venv
+# Install modul venv dulu kalau belum ada
+sudo apt install python3-venv -y
+
+# Buat virtual environment
+python3 -m venv venv
+
+# Aktifkan venv
+source venv/bin/activate
+
+# Install requirements
+pip install -r requirements.txt
